@@ -25,99 +25,140 @@
 </head>
 
 <body>
+
+  
 	<header>
-    
-		<div class="logo-in-nav">
-			<img class="logo" src="./img/LuckyCourt.png" alt="Lucky Court Logo">
-		</div>
+  <div class="logo-in-nav">
+    <img class="logo" src="./img/LuckyCourt.png" alt="Lucky Court Logo">
+  </div>
 
-		<button class="menu-toggle" aria-expanded="false" aria-controls="offcanvas-menu" onclick="myFunction(this)">
-			<div class="bar1"></div>
-			<div class="bar2"></div>
-			<div class="bar3"></div>
-		</button>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="offcanvas-menu">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </button>
 
-		<nav id="offcanvas-menu" class="menu">
-			<a href="#about">About</a>
-			<a href="#visit">Visit Us</a>
-			<a href="#contact">Contact Us</a>
-			<a href="#flavor-menu">Menu</a>
-			<a href="./form.html">Order Now</a>
-		</nav>
+  <nav id="offcanvas-menu" class="menu">
+    <a href="#about">About</a>
+    <a href="#visit">Visit</a>
+    <a href="#contact">Contact</a>
+    <a href="#amenities-list">Amenities</a>
+  </nav>
+</header>
 
-	</header>
+<section class="hero">
+  <img src="./img/pickleball.jpg" alt="Pickleball Court" class="hero-img">
+  <div class="hero-text">
+    <h1>Home is where the court is!</h1>
+  </div>
+</section>
 
-	<section class="hero">
-    <img src="./img/pickleball.jpg" alt="Pickleball Court" class="hero-img">
-    <div class="hero-text">
-      <h1>Home is where the court is!</h1>
+<main>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Us!</h2>
+    <p>
+      Lucky Court is a place for pickleball lovers to get together with the community to play their favorite game and enjoy a ton of other amenities! We are home to not only 8 courts, but to local food trucks, unique bars, free pickleball lessons, comfortable lounges, and an arcade for kids and kids at heart! Whether you are stopping by for a quick match or spending the entire day with friends and family, Lucky Court offers an exciting and welcoming atmosphere where competition, connection, and entertainment all come together in one vibrant space.
+    </p>
+  </section>
+
+  <!-- Amenities Section -->
+  <section class="amenities-list" id="amenities-list">
+    <h2>View Our Amenities!</h2>
+    <article class="amenities">
+      <div class="amenity">
+        <img src="./img/PaddleOnCourt.jpg" alt="Courts">
+        <p>8 Pickleball Courts, Equipment Included!</p>
+      </div>
+      <div class="amenity">
+        <img src="./img/lounge.jpg" alt="Lounge">
+        <p>Lounges to relax in between matches!</p>
+      </div>
+      <div class="amenity">
+        <img src="./img/bar.jpg" alt="Bar">
+        <p>Unique bars filled with your favorites!</p>
+      </div>
+      <div class="amenity">
+        <img src="./img/foodtruck.jpg" alt="Food">
+        <p>Food trucks from your favorite local spots!</p>
+      </div>
+      <div class="amenity">
+        <img src="./img/arcade.jpg" alt="Arcade">
+        <p>Arcade with the classics, pool, and shuffleboard!</p>
+      </div>
+      <div class="amenity">
+        <img src="./img/lessons.jpg" alt="Lessons">
+        <p>Free lessons open to anyone!</p>
+      </div>
+    </article>
+
+    <!-- Reservation Form -->
+    <div class="open-reservation-form">
+      <input type="checkbox" id="toggle-reservation">
+      <label for="toggle-reservation" class="reservation-button">
+        Make your reservation now!
+      </label>
+
+      <form class="reservation-form">
+        <div class="fields">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Your Name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Your Email" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" placeholder="Your Phone Number" required>
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" required>
+
+          <label for="time">Time:</label>
+          <input type="time" id="time" required>
+
+          <input type="submit" value="Reserve">
+        </div>
+      </form>
     </div>
   </section>
 
-	<main>
-    </section>
-    <div class="about" id="about">
-      <h2>About Us!</h2>
-      <p>Lucky Court is a place for pickleball lovers to get together with the community to play their favorite game and enjoy a ton of other amenities! We are home to not only 8 courts, but to local food trucks, unique bars, free pickleball lessons, comfortable lounges, and an arcade for kids and kids at heart! Whether you are stopping by for a quick match or spending the entire day with friends and family, Lucky Court offers an exciting and welcoming atmosphere where competition, connection, and entertainment all come together in one vibrant space. </p>
-    </div>
-    <section class="flavor-menu" id="flavor-menu">
-      <h2>View Our Amenities!</h2>
-      <article class="flavors">
-        <div class="flavor">
-          <img src="./img/PaddleOnCourt.jpg" alt="Courts">
-          <p>8 Pickleball Courts, Equipment Included!</p>
-        </div>
-        <div class="flavor">
-          <img src="./img/lounge.jpg" alt="Lounge">
-          <p>Lounges to relax in between matches!</p>
-        </div>
-        <div class="flavor">
-          <img src="./img/bar.jpg" alt="Bar">
-          <p>Unique bars filled with your favorites!</p>
-        </div>
-        <div class="flavor">
-          <img src="./img/foodtruck.jpg" alt="Food">
-          <p>Food trucks from your favorite local spots!</p>
-        </div>
-        <div class="flavor">
-          <img src="./img/arcade.jpg" alt="Arcade">
-          <p>Arcade with the classics, pool, and shuffleboard!</p>
-        </div>
-        <div class="flavor">
-          <img src="./img/lessons.jpg" alt="Lessons">
-          <p>Free lessons open to anyone!</p>
-        </div>	
-      </article>
-      <div class="open-order-form">
-        <p><a href="./form.html">Make your reservation now!</a></p>
-      </div>
-    </section>
-    <section class="info">
-      <article id="visit">
-        <h2>Visit Us</h2>
-        <h3>Location</h3>
-        <p>1228 Pickle Avenue, Baton Rouge, LA, 70820</p>
-        <h3>Hours</h3>
-        <ul>
-          <li>Monday: 2:00pm-10:00pm</li>
-          <li>Tuesday: 2:00pm-10:00pm</li>
-          <li>Wednesday: 2:00pm-10:00pm</li>
-          <li>Thursday: 2:00pm-10:00pm</li>
-          <li>Friday: 10:00am-12:00am</li>
-          <li>Saturday: 10:00am-12:00am</li>
-          <li>Sunday: 10:00am-5:00pm</li>
-        </ul>
-      </article>
-      <article id="contact">
-        <h2>Let's Get in Touch!</h2>
-        <p><a href="tel:(225) ">(225) 474-2553</a></p>
-        <p><a href="mailto:luckycourtbatonrouge@email.com">luckycourtbatonrouge@email.com</a></p>
-      </article>
-    </section>
-	</main>
+  <!-- Visit & Contact Section -->
+  <section class="info">
+    <article id="visit">
+      <h2>Visit Us</h2>
+      <h3>Location</h3>
+      <p>1228 Pickle Avenue, Baton Rouge, LA, 70820</p>
+      <h3>Hours</h3>
+      <ul>
+        <li>Monday: 2:00pm-10:00pm</li>
+        <li>Tuesday: 2:00pm-10:00pm</li>
+        <li>Wednesday: 2:00pm-10:00pm</li>
+        <li>Thursday: 2:00pm-10:00pm</li>
+        <li>Friday: 10:00am-12:00am</li>
+        <li>Saturday: 10:00am-12:00am</li>
+        <li>Sunday: 10:00am-5:00pm</li>
+      </ul>
+    </article>
 
-  <script src="js/main.js"></script>
+    <article id="contact">
+      <h2>Let's Get in Touch!</h2>
+      <p><a href="tel:(225)474-2553">(225) 474-2553</a></p>
+      <p><a href="mailto:luckycourtbatonrouge@email.com">luckycourtbatonrouge@email.com</a></p>
+    </article>
+  </section>
+</main>
 
+<!-- JS -->
+<script src="js/main.js"></script>
+<script>
+  // Select the menu toggle button and the menu
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
 
-
+  // Add click event
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('expanded');   // show/hide menu
+    menuToggle.classList.toggle('change'); // animate hamburger
+  });
+</script>
 </body>
