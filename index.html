@@ -153,14 +153,13 @@
 <!-- JS -->
 <script src="js/main.js"></script>
 <script>
-  // Select the menu toggle button and the menu
+  
   const menuToggle = document.querySelector('.menu-toggle');
   const menu = document.querySelector('.menu');
 
-  // Add click event
   menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('expanded');   // show/hide menu
-    menuToggle.classList.toggle('change'); // animate hamburger
+    menu.classList.toggle('expanded');
+    menuToggle.classList.toggle('change');
   });
 </script>
 </body>
